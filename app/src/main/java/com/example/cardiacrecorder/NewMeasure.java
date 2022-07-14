@@ -32,24 +32,29 @@ public class NewMeasure extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_new_measure);
 
         systolic = findViewById(R.id.systolic);
         diastolic = findViewById(R.id.diastolic);
         pulse = findViewById(R.id.pulse);
         date = findViewById(R.id.date);
         time = findViewById(R.id.time);
+        submit = findViewById(R.id.button3);
+
 
         Calendar calendar=Calendar.getInstance();
         String currentDate= DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
-        date.setText(currentDate);
+        date.setText(""+currentDate);
 
         Calendar calendar1=Calendar.getInstance();
         SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm:ss");
-        String time1 =currentTime.format(calendar.getTime());
+        String time1 =currentTime.format(calendar1.getTime());
+        //Toast.makeText(NewMeasure.this,currentDate+time1,Toast.LENGTH_SHORT).show();
+
         time.setText(time1);
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_measure);
+
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
