@@ -14,7 +14,7 @@ public class homepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
-        Toast.makeText(homepage.this,"data cinnected",Toast.LENGTH_SHORT).show();
+        Toast.makeText(homepage.this,"data connected",Toast.LENGTH_SHORT).show();
         Button createMeasure= findViewById(R.id.createNewMeasure);
         createMeasure.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +28,7 @@ public class homepage extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(homepage.this,NewMeasure.class);
+                Intent intent = new Intent(homepage.this,MeasureList.class);
                 startActivity(intent);
             }
         });

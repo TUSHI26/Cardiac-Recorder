@@ -122,13 +122,12 @@ DatabaseReference reference,ref;
                                 Toast.makeText(NewMeasure.this,"Invalid data", Toast.LENGTH_SHORT).show();
 
                             }
-                    helper.setSystol(sys);
+                            helper.setSystol(sys);
                             helper.setDiastol(dias);
                             helper.setPuls(pul);
                             helper.setDate(currentDate);
-                            helper.setSystol(sys);
                             helper.setTime(time1);
-                            helper.setTime(comment);
+                            helper.setComment(comment);
                             reference.push().setValue(helper);
                             Log.e(TAG, "onClick: "+helper.getDate() );
 
