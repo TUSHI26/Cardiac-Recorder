@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "316514429206",
+    "project_id": "tushi-38c81",
+    "storage_bucket": "tushi-38c81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316514429206:android:c55583ab4f90adfdcf4837",
+        "android_client_info": {
+          "package_name": "com.example.cardiacrecorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316514429206-jhd9kkqt97kvk2ovlaev49eqvmooqvdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyConlfSyXEmTL7kj4z1D5-Xg76C1KQkol8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316514429206-jhd9kkqt97kvk2ovlaev49eqvmooqvdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316514429206:android:7cb585a7753964b7cf4837",
+        "android_client_info": {
+          "package_name": "com.example.cardiacrecorders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316514429206-ede9hijb0obsdbv2t72dqrmummgte3ff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cardiacrecorders",
+            "certificate_hash": "5dc9f29395d4903e6708ae895b08ccc9a5bdfbd7"
+          }
+        },
+        {
+          "client_id": "316514429206-jhd9kkqt97kvk2ovlaev49eqvmooqvdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyConlfSyXEmTL7kj4z1D5-Xg76C1KQkol8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316514429206-jhd9kkqt97kvk2ovlaev49eqvmooqvdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

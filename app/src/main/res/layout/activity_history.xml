@@ -5,8 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".History">
-
-
+    <ListView
+        android:dividerHeight="2dp"
+        android:divider="#ff22"
+        android:id="@+id/listViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

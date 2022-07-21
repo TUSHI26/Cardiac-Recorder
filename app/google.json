@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "316296550204",
+    "project_id": "cardiac-2e753",
+    "storage_bucket": "cardiac-2e753.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316296550204:android:614a1fb97be937ebaeb039",
+        "android_client_info": {
+          "package_name": "com.example.cardiac_recorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316296550204-4ldctrrmmbsrpcc3p0t8e7pb9grqfnnc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cardiac_recorder",
+            "certificate_hash": "5dc9f29395d4903e6708ae895b08ccc9a5bdfbd7"
+          }
+        },
+        {
+          "client_id": "316296550204-6nvs2snnufdkluv041qgdkj5vtb8374a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwH9MADJXK8_DEo5OYZS_Z9jOfVFKCXfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316296550204-6nvs2snnufdkluv041qgdkj5vtb8374a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316296550204:android:14e4391a83bc43d2aeb039",
+        "android_client_info": {
+          "package_name": "com.example.cardiacrecorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316296550204-6nvs2snnufdkluv041qgdkj5vtb8374a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwH9MADJXK8_DEo5OYZS_Z9jOfVFKCXfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316296550204-6nvs2snnufdkluv041qgdkj5vtb8374a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
