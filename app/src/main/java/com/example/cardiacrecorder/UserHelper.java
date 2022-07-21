@@ -1,11 +1,21 @@
 package com.example.cardiacrecorder;
 
 public class UserHelper {
-    private String systol;
-    private String diastol;
-    private String puls;
-    private String date;
-    private String time;
+    public String systol;
+    public String diastol;
+    public String puls;
+    public String date;
+    public String time;
+    public String comment;
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
     public UserHelper(){
 
     }
@@ -30,7 +40,7 @@ public class UserHelper {
         return puls;
     }
 
-    public void setPuls(String pul) {
+    public void setPuls(String puls) {
         this.puls = puls;
     }
 

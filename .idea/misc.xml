@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Cardiac-Recorder/app/src/main/res/layout/activity_history.xml" value="0.25" />
+        <entry key="..\:/Cardiac-Recorder/app/src/main/res/layout/activity_homepage.xml" value="0.25" />
+        <entry key="..\:/Cardiac-Recorder/app/src/main/res/layout/activity_main.xml" value="0.19907407407407407" />
+        <entry key="..\:/Cardiac-Recorder/app/src/main/res/layout/activity_measure_list.xml" value="0.25" />
+        <entry key="..\:/Cardiac-Recorder/app/src/main/res/layout/activity_measurelist.xml" value="0.25" />
+        <entry key="..\:/Cardiac-Recorder/app/src/main/res/layout/item.xml" value="0.20427350427350427" />
         <entry key="..\:/CardiacRecorder/app/src/main/res/layout/activity_history.xml" value="0.25" />
         <entry key="..\:/CardiacRecorder/app/src/main/res/layout/activity_homepage.xml" value="0.2359375" />
         <entry key="..\:/CardiacRecorder/app/src/main/res/layout/activity_main.xml" value="0.19907407407407407" />
