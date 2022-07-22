@@ -131,6 +131,12 @@ DatabaseReference reference,ref;
                             reference.push().setValue(helper);
                             Log.e(TAG, "onClick: "+helper.getDate() );
 
+
+                            Intent intent = new Intent(NewMeasure.this,homepage.class);
+                            startActivity(intent);
+
+                            
+
                    /*    reference.child(sys).setValue(sys);
                         reference.child(sys).setValue(dias);
                         reference.child(sys).setValue(pul);
