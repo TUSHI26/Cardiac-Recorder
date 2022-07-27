@@ -33,20 +33,28 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 public class NewMeasure extends AppCompatActivity {
+    /**
+     * taking every element which want to records in database
+     */
 
     EditText systolic,diastolic,pulse;
     Button submit;
     TextView date, time;
     String comment;
-   UserHelper helper=new UserHelper();
-  //  DatabaseReference reference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://tushi-38c81-default-rtdb.firebaseio.com/");
-  //FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-   // DatabaseReference reference = firebaseDatabase.getReference();
+    /**
+     * taking a user helper variables for pushing data into database
+     */
+   UserHelper helper= new UserHelper();
+
 DatabaseReference reference,ref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_measure);
+
+        /**
+         * taking every variables id and make them dynamic
+         */
 
         systolic = findViewById(R.id.systolic);
         diastolic = findViewById(R.id.diastolic);
@@ -56,16 +64,27 @@ DatabaseReference reference,ref;
         submit = findViewById(R.id.button3);
 
 
+        /**
+         * take calender from instance for current date which will be automatically applied on the apps
+         */
+
         Calendar calendar=Calendar.getInstance();
         String currentDate= DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
         date.setText(""+currentDate);
 
+
+        /**
+         * take time from instance for current time which will be automatically applied on  apps
+         */
         Calendar calendar1=Calendar.getInstance();
         SimpleDateFormat currentTime = new SimpleDateFormat("hh:mm:ss");
         String time1 =currentTime.format(calendar1.getTime());
         //Toast.makeText(NewMeasure.this,currentDate+time1,Toast.LENGTH_SHORT).show();
 
         time.setText(time1);
+        /**
+         * taking firebase database as references
+         */
         reference=FirebaseDatabase.getInstance().getReference().child("data");
 
 
@@ -76,7 +95,11 @@ DatabaseReference reference,ref;
 
                // reference.child("data").addListenerForSingleValueEvent(new ValueEventListener() {
 
-                        String sys =systolic.getText().toString();
+                /**
+                 * getting value from user
+                 */
+
+                String sys =systolic.getText().toString();
                         String dias=diastolic.getText().toString();
                         String pul=pulse.getText().toString();
 
@@ -84,15 +107,11 @@ DatabaseReference reference,ref;
                         Integer diasvalue = Integer.parseInt(dias);
                         Integer pulvalue = Integer.parseInt(pul);
 
+
+                /**
+                 * check the value of systolic and diastolic and make a comment applying some condition over them
+                 */
                         if(sysvalue<=150 && sysvalue>=100 && diasvalue>=60 && diasvalue<=100 && pulvalue<=100) {
-                           /* HashMap<String, String> userdata = new HashMap<>();
-                            userdata.put("Date", currentDate);
-                            userdata.put("Time", time1);
-                            userdata.put("systolic", sys);
-                            userdata.put("diastolic", dias);
-                            userdata.put("pulse", pul);*/
-
-
 
                             if(sysvalue<=110 || diasvalue<=70){
                                 comment = "low pressure";
@@ -122,24 +141,28 @@ DatabaseReference reference,ref;
                                 Toast.makeText(NewMeasure.this,"Invalid data", Toast.LENGTH_SHORT).show();
 
                             }
-                    helper.setSystol(sys);
+
+                            /**
+                             * pushing the value of systolic diastolic pulse date and time into user helper
+                             *
+                             */
+                            helper.setSystol(sys);
                             helper.setDiastol(dias);
                             helper.setPuls(pul);
                             helper.setDate(currentDate);
-                            helper.setSystol(sys);
                             helper.setTime(time1);
-                            helper.setTime(comment);
+                            helper.setComment(comment);
                             reference.push().setValue(helper);
                             Log.e(TAG, "onClick: "+helper.getDate() );
 
-                   /*    reference.child(sys).setValue(sys);
-                        reference.child(sys).setValue(dias);
-                        reference.child(sys).setValue(pul);
-                        reference.child("data").child(sys).setValue(time1);
-                            reference.setValue( currentDate);
-                            reference.child(sys).setValue(comment);
+                            /**
+                             * make an intent for going to homepage from  this class
+                             */
+                            Intent intent = new Intent(NewMeasure.this,homepage.class);
+                            startActivity(intent);
 
-                        finish();*/
+                            
+
 
                     }}
 

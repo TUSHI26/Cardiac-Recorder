@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.example.cardiacrecorder","l":"addMeasure"},{"l":"All Classes","url":"allclasses-index.html"}]

@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="303dp"
-        android:layout_height="35dp"
+        android:layout_width="301dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="60dp"
         android:text=" VIEW MEASUREMENT HISTORY"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -116,16 +116,16 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="302dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="307dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
         android:text="CREATE NEW MEASUREMENT"
         android:textColor="@color/black"
 
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 

@@ -1,5 +1,9 @@
 package com.example.cardiacrecorder;
 
+
+/**
+ * creating add measure class for adding the value  of variables from input
+ */
 public class addMeasure {
     String Date, Time, systolic, diastolic,pulse , comment;
 
@@ -15,7 +19,10 @@ public class addMeasure {
         this.comment = comment;
     }
 
-
+    /**
+     * creating getter setter for the variables
+     * @return
+     */
     public String getDate() {
         return Date;
     }

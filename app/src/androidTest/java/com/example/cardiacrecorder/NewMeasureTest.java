@@ -1,3 +1,4 @@
+
 package com.example.cardiacrecorder;
 //import static org.junit.Assert.*;
 import static androidx.test.espresso.Espresso.onView;
@@ -41,4 +42,3 @@ public class NewMeasureTest {
 
 
 
-}
