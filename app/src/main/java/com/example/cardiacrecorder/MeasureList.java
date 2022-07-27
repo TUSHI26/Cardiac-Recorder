@@ -16,6 +16,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class MeasureList extends AppCompatActivity {
+    /**
+     * creating a recycler view for showing the records of data
+     */
 
     RecyclerView recyclerView;
     DatabaseReference database;
@@ -30,6 +33,9 @@ public class MeasureList extends AppCompatActivity {
         setContentView(R.layout.activity_measure_list);
 
         recyclerView = findViewById(R.id.MeasureList);
+        /**
+         * taking database as references
+         */
         database = FirebaseDatabase.getInstance().getReference("data");
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -41,6 +47,9 @@ public class MeasureList extends AppCompatActivity {
         database.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                /**
+                 * pushing them into recycler view
+                 */
 
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     User user = dataSnapshot.getValue(User.class);

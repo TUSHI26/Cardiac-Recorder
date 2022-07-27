@@ -1,5 +1,12 @@
 package com.example.cardiacrecorder;
 
+/**
+ * defining user class and its variables
+ * and set getter setter of this variables
+ * get string variables
+ */
+
+
 public class User{
     String date,time,systol,diastol,puls,comment;
 
