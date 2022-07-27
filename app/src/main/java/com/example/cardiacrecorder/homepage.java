@@ -14,7 +14,16 @@ public class homepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+        /**
+         * checking if the data is connect or not
+         */
+
         Toast.makeText(homepage.this,"data connected",Toast.LENGTH_SHORT).show();
+
+        /**
+         * taking id of create new measure
+         * and creating an intent for new measure page
+         */
         Button createMeasure= findViewById(R.id.createNewMeasure);
         createMeasure.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,7 +32,9 @@ public class homepage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+/**
+ * taking id for history and create intent for measurement page
+ */
         Button history = findViewById(R.id.history);
         history.setOnClickListener(new View.OnClickListener() {
             @Override

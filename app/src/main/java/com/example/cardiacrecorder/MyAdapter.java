@@ -11,6 +11,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+
+/**
+ * creating an adapter class for recycler view
+ */
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     Context context;
@@ -32,6 +36,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
+        /**
+         * getting the data into holder
+         */
+
         User user = list.get(position);
         holder.date.setText(user.getDate());
         holder.time.setText(user.getTime());
@@ -50,7 +58,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-
+        /**
+         * declaring the variables which  we want to show in the recycler view
+         */
         TextView date,time,systolic,diastolic,pulse,comment;
 
         public MyViewHolder(@NonNull View itemView) {
