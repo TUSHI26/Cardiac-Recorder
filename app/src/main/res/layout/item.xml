@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -167,6 +168,18 @@
                 android:text="comment"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/dark"
+                android:layout_width="51dp"
+                android:layout_height="55dp"
+                android:background="@drawable/delete" />
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="51dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edit" />
 
         </LinearLayout>
 
