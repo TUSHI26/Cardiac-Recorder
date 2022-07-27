@@ -1,12 +1,25 @@
 package com.example.cardiacrecorder;
 
+/**
+ * creating user helper class for pushing data into firebase database
+ */
+
 public class UserHelper {
+
+    /**
+     * declaring the variables for data input
+     */
     public String systol;
     public String diastol;
     public String puls;
     public String date;
     public String time;
     public String comment;
+
+    /**
+     * declaring getter setter
+     * @return
+     */
 
     public String getComment() {
         return comment;
