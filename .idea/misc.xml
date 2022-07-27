@@ -17,8 +17,15 @@
         <entry key="..\:/cardiac-recorder/Cardiac-Recorder/app/src/main/res/layout/activity_homepage.xml" value="0.1" />
         <entry key="..\:/cardiac-recorder/Cardiac-Recorder/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/cardiac-recorder/Cardiac-Recorder/app/src/main/res/layout/activity_new_measure.xml" value="0.25" />
+        <entry key="..\:/caro/Cardiac-Recorder/app/src/main/res/layout/activity_main.xml" value="0.20104166666666667" />
+        <entry key="..\:/caro/Cardiac-Recorder/app/src/main/res/layout/activity_measure_list.xml" value="0.1921875" />
       </map>
     </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/javadoc_2" />
+    <option name="OPTION_SCOPE" value="public" />
+    <option name="OPTION_INCLUDE_LIBS" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

@@ -1,5 +1,9 @@
 package com.example.cardiacrecorder;
 
+/**
+ * creating the splash screen for apps
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
