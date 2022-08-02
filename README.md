@@ -7,3 +7,5 @@ Name:Rakib
 2.These lists are shown in a measurement list .whenever a new measurement is added ,that list is added to the bottom of the list.
 3.user can edit or delete a a list.
 4.records are added according to date and time whenever an user  records an item.
+5.At first we added login pages to our app using linear layout then android constrain layout was used but we faced a problem going to another activity from an activity if we use linear layout and constraint layout so we had to truncate login and signup page.It can be said signup login pages were done with realtime database using firebase.
+
